@@ -285,7 +285,7 @@ function countdown_timer() {
     var colon = document.getElementById("colon")
 
     var s_minutes = 1
-    var s_seconds = 0
+    var s_seconds = 2
 
     minutes.textContent = s_minutes
     seconds.textContent = s_seconds
@@ -302,6 +302,7 @@ function countdown_timer() {
         }
         if (s_minutes == "00" && s_seconds == "00") {
             clearInterval(timer)
+            alert("your time is up!!")
             score_redirect()
         }
 
