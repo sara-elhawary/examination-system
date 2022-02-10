@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;700&display=swap');
+
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    background-size: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: white !important;
+}
+.nav-link{
+    color:#131e29 !important;
+    font-weight: 500;
+    padding-right: 40px !important;
+}
+
+#logo{
+  width:20px;
+  height:auto;
+  margin-top:8px;
+  color:white;
+  font-size: 25px;
+  line-height: 25px;
+
+}
+
+#logo-div{
+    width:40px;
+    height:40px;
+    border-radius:70px/100px;
+    /* padding-right:4px; */
+    padding-left:3px;
+    padding-bottom:5px;
+    border-radius:7px;
+}
+
+#grad-div{
+    width:300px;
+    height:240px;
+    padding:0 30px;
+    top:200px;
+    position:relative;
+    border-radius:70px/90px;
+}
+#student-img{
+    position: relative;
+    left:30px;
+    /* width:200px; */
+    bottom:174px;
+
+}
+
+.grad{
+    background: rgb(86,179,236);
+    background: linear-gradient(45deg, rgba(86,179,236,1) 4%, rgba(189,146,228,1) 50%, rgba(239,121,152,1) 94%);
+}
+
+
+
+.row-1{
+    margin-top:100px !important;
+}
+
+#main-title{
+    /* font-size: 80px; */
+    font-weight: 700;
+}
+
+/***************************************************MODALS************************************************************/
+#sign-up{
+    border-radius: 20px !important;
+}
+.form-header p{
+    font-weight: 400;
+}
+input{
+    height:50px !important;
+    width:275px !important;
+}
+label{
+    font-size:16px;
+    font-weight: 400;
+}
+form{
+    min-width:300px !important;
+}
+
+#sign-up-submit,#sign-in-submit{
+    border:none;
+    font-size:22px;
+    line-height: 20px;
+}
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
+
+.modal{
+   
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    
+}
+
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+  
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.modal .modal-content {
+    padding: 20px 20px 20px 20px;
+    -webkit-animation-name: modal-animation;
+    -webkit-animation-duration: 0.5s;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+}
+  
+@-webkit-keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+  
+@keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}

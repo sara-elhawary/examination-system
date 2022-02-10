@@ -1,0 +1,43 @@
+body{
+    background-color:#fff;
+    /* overflow: hidden; */
+}
+
+.container{
+    background-color: white;
+     position: absolute; 
+    margin-top:70px;
+     border-radius:5px;
+    left: 0; 
+    right: 0;
+     margin-left: auto; 
+    margin-right: auto;
+    width:400px !important;  
+
+}
+input{
+    height:50px !important;
+    width:275px !important;
+}
+label{
+    font-size:16px;
+}
+form{
+    min-width:300px !important;
+}
+
+.grad{
+    background: rgb(86,179,236);
+    background: linear-gradient(45deg, rgba(86,179,236,1) 4%, rgba(189,146,228,1) 50%, rgba(239,121,152,1) 94%);
+}
+#sign-up-submit{
+    border:none;
+    font-size:22px;
+    line-height: 20px;;
+}
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c1492e6ade.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Education</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header fixed-top row container-fluid pt-3">
+                <div class="offset-1 col-2 d-flex justify-content-center align-items-center mt-2 grad" id="logo-div">
+                    <i class="fas fa-book-open" id="logo"></i>
+                </div>
+                <nav class="offset-5 col-5 d-flex justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Available Tests</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=" #">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button id="log-in"
+                                        class="rounded-pill btn btn-primary fw-bold bg-dark border border-dark px-4 py-2"
+                                        data-bs-toggle="modal" data-bs-target="#signInModal">Log In</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container px-5 mt-5">
+                <div class="row align-items-center gx-5 ">
+                    <div class="col-lg-6">
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start mt-5 row">
+                            <h1 id="main-title" class="display-1 lh-1 mb-3">
+                                Test your skills online with top questions
+                            </h1>
+                            <h3 class="mb-5 mt-5">We add value to our student's journey</h3>
+                            <div>
+                                <button id="sign-up"
+                                    class="rounded btn btn-primary fw-bold fs-4 bg-dark border border-dark py-2 px-4 mt-4 me-lg-3 mb-4 mb-lg-0"
+                                    data-bs-toggle="modal" data-bs-target="#signUpModal">Sign
+                                    up</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 align-items-center" id="student">
+                        <div id="grad-div" class="grad"></div>
+                        <img src="./assets/images/girl_1.png" id="student-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!------Modals------>
+            <div class="modal  fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="form-header">
+                                <h3>Sign Up with your email</h3>
+                                <p>Already have an account? <a href="#" class="text-decoration-none">Sign
+                                        in</a></p>
+                            </div>
+                            <form id="signUpForm" class="d-flex flex-column">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="floatingFirstName" placeholder='John'
+                                        required autofocus>
+                                    <label for="floatingFirstName">First Name</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="floatingLastName" placeholder='Doe'
+                                        required>
+                                    <label for="floatingLastName">Last Name</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="email" class="form-control" id="floatingEmail"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        placeholder='johnDoe@example.com' required>
+                                    <label for="floatingEmail">Email address</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="password" class="form-control" id="floatingPassword-1"
+                                        placeholder="Password"
+                                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$">
+                                    <label for=" floatingPassword-1">Password</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="password" class="form-control " id="floatingPassword-2"
+                                        placeholder="Password"
+                                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$">
+                                    <label for=" floatingPassword-2">Re-enter Password</label>
+                                    <span id="re-password-invalid" class="text-danger invisible">Your Passwords don't
+                                        match!</span>
+                                </div>
+
+                                <input type="submit" class="btn btn-primary grad fs-4 fw-bold py-3"
+                                    value="Create Account" id="sign-up-submit">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="form-header mb-2 text-center">
+                                <h3>Welcome Back</h3>
+                                <h1>Please Sign In</h1>
+                            </div>
+                            <div id="error-msg"
+                                class="invisible text-danger w-75 mx-auto d-flex justify-content-between border border-danger py-1 px-2 rounded">
+                                <span>Incorrect email or password</span>
+                                <span><a id="error-exit" href="#" class="text-decoration-none text-danger"> x</a></span>
+
+                            </div>
+
+                            <form id="signInForm" class="d-flex flex-column mt-2">
+                                <div class="form-floating mb-2">
+                                    <input type="email" class="form-control" id="floatingEmail-i" \
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        placeholder='johnDoe@example.com' required>
+                                    <label for="floatingEmail-i">Email address</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="password" class="form-control" id="floatingPassword-1-i"
+                                        placeholder="Password"
+                                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$">
+                                    <label for="floatingPassword-i">Password</label>
+                                    <span id="re-password-invalid-i" class="text-danger d-none">Your Passwords don't
+                                        match!</span>
+                                </div>
+
+                                <input type="submit" class="btn btn-primary grad fs-4 fw-bold py-3 border-none"
+                                    value="Log In" id="sign-in-submit">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./libs/cookie-lib.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+    </body>
+
+</html>
